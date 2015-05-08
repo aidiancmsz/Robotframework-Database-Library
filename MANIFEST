@@ -1,5 +1,0 @@
-setup.py
-src/DatabaseLibrary/__init__.py
-src/DatabaseLibrary/assertion.py
-src/DatabaseLibrary/connection_manager.py
-src/DatabaseLibrary/query.py

@@ -27,17 +27,18 @@ __version_file_path__ = os.path.join(src_path, 'DatabaseLibrary', 'VERSION')
 __version__ = open(__version_file_path__, 'r').read().strip()
 
 def main():
-    setup(name         = 'robotframework-databaselibrary',
-          version      = __version__,
-          description  = 'Database utility library for Robot Framework',
-          author       = 'Franz Allan Valencia See',
-          author_email = 'franz.see@gmail.com',
-          url          = 'https://github.com/franz-see/Robotframework-Database-Library',
-          package_dir  = { '' : 'src'},
-          packages     = ['DatabaseLibrary'],
-          requires     = ['robotframework']
-          )
-        
+    setup(
+        name         = 'robotframework-databaselibrary',
+        version      = __version__,
+        description  = 'Database utility library for Robot Framework',
+        author       = 'Franz Allan Valencia See',
+        author_email = 'franz.see@gmail.com',
+        url          = 'https://github.com/franz-see/Robotframework-Database-Library',
+        package_dir  = { '' : 'src'},
+        packages     = ['DatabaseLibrary'],
+        include_package_data=True,
+        requires     = ['robotframework']
+    )
 
 if __name__ == "__main__":
     main()
